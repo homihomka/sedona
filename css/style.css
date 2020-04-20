@@ -14,11 +14,12 @@ body {
   padding: 0;
   height: 100%;
   font-family: "PT Sans", sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 a {
@@ -42,7 +43,7 @@ img {
   width: 1200px;
   min-height: 100%;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -75,8 +76,7 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  color: #000;
-  text-transform: uppercase;
+  color: #000000;
 }
 
 .navigation__link--active {
@@ -100,4 +100,109 @@ img {
 .intro__img {
   height: 500px;
   width: 1200px;
+}
+
+.promo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__slogan {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.promo__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.promo__item {
+  flex-grow: 1;
+}
+
+.promo__box {
+  display: flex;
+  flex-direction: row;
+}
+
+.promo__container-text {
+  width: 400px;
+  height: 250px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.line::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  top: -2px;
+  left: -5px;
+}
+
+.line::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+
+.promo__img {
+  width: 800px;
+  height: 250px;
+}
+
+.promo__container-text--gray {
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.line--black::before {
+  background-color: #333333;
+}
+
+.line--black::after {
+  background-color: #333333;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+
+.items__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
