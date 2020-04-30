@@ -107,16 +107,22 @@ img {
   margin-bottom: 30px;
 }
 
-.promo__wrapper {
+.section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.promo__slogan {
+.section-header__slogan {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+}
+
+.section-header__text {
   text-align: center;
 }
 
@@ -205,4 +211,105 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.section-header__slogan--bold {
+  font-size: 30px;
+}
+
+.aside__dropdown-container {
+  position: relative;
+}
+
+.btn {
+  background-color: #766357;
+  border: none;
+  color: white;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.btn--large {
+  padding-top: 35px;
+  padding-right: 140px;
+  padding-bottom: 35px;
+  padding-left: 140px;
+  margin: auto;
+}
+
+.btn__text {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.btn__text--large {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 567px;
+  min-height: 400px;
+  background-color: white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  padding: 55px;
+}
+
+.dropdown__search-form-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dropdown__form-ladel {
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  min-width: 112px;
+  padding-left: 10px;
+}
+
+.date-input {
+  flex-grow: 1;
+  position: relative;
+}
+.form-input {
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+  padding: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.date-input__btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
