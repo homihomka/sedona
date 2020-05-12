@@ -44,6 +44,7 @@ img {
   min-height: 100%;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
+  position: relative;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -235,6 +236,16 @@ img {
   font-size: 16px;
 }
 
+.btn--large:hover,
+.btn--large:focus {
+  background-color: #604e43;
+}
+
+.btn--large:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
 .btn--large {
   padding-top: 35px;
   padding-right: 140px;
@@ -276,12 +287,17 @@ img {
   margin-bottom: 30px;
 }
 
+.dropdown__fields-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .dropdown__form-ladel {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
   min-width: 112px;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .date-input {
@@ -300,6 +316,15 @@ img {
   text-transform: uppercase;
 }
 
+.form-input:hover {
+  background-color: #ebebeb;
+}
+
+.form-input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: transparent;
+}
+
 .date-input__btn {
   position: absolute;
   background-color: transparent;
@@ -312,4 +337,183 @@ img {
   padding-right: 9px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.date-input__btn-icon {
+  fill: #cacaca;
+}
+
+.date-input__btn-icon:hover,
+.date-input__btn-icon:focus {
+  fill: #000000;
+}
+
+.date-input__btn-icon:active {
+  fill: #81b3d2;
+}
+
+.dropdown__search-form-people {
+  display: flex;
+  align-items: center;
+}
+
+.people-input {
+  display: flex;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.people-input__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 38px;
+  position: relative;
+}
+
+.people-input__btn:after {
+  content: "";
+  height: 3px;
+  width: 12px;
+  background: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.people-input__btn--plus:before {
+  content: "";
+  height: 12px;
+  width: 3px;
+  background: #a9a9a9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.people-input__btn:focus::after,
+.people-input__btn:focus::before,
+.people-input__btn:hover::after,
+.people-input__btn:hover::before {
+  background-color: #000000;
+}
+
+.people-input__btn:active::after,
+.people-input__btn:active::before {
+  background-color: #81b3d2;
+}
+
+.people-input__field {
+  width: 38px;
+  flex-grow: 0;
+  text-align: center;
+}
+
+.dropdown__form-ladel--auto-width {
+  min-width: initial;
+  padding-right: 27px;
+}
+
+.btn__find {
+  background-color: #81b3d2;
+  padding-top: 22px;
+  padding-right: 196px;
+  padding-bottom: 22px;
+  padding-left: 196px;
+  margin-top: 54px;
+}
+
+.btn__find:hover,
+.btn__find:focus,
+.social-link__btn:hover,
+.social-link__btn:focus {
+  background-color: #669ec0;
+}
+
+.btn__find:active,
+.social-link__btn:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.footer__container {
+  width: 972px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__hashtag {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.footer__website {
+  line-height: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.footer__link {
+  margin-left: 9px;
+}
+
+.footer__logo-htmlacademy {
+  vertical-align: middle;
+}
+
+.footer__logo-htmlacademy:focus,
+.footer__logo-htmlacademy:hover {
+  fill: #81b3d2;
+}
+
+.footer__logo-htmlacademy:active {
+  fill: #bdbbbc;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-link__btn {
+  background-color: #81b3d2;
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+}
+
+.social-link__btn:last-child {
+  margin-right: 0;
+}
+
+.social-link__btn:active .social-link__icon {
+  fill: #88b6d1;
+}
+
+.social-link__icon {
+  fill: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
