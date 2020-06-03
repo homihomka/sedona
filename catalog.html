@@ -42,53 +42,70 @@
     <main>
 
       <section class="filter-inner">
-        <div>
-          <ul class="filter">
-            <li> <p class="filter-title">Инфраструктура:</p>
-              <ul class="filter-title__list">
-                <li>
-                  <input class="checkbox" type="checkbox" value="lnk11" id="lnk11" checked>
-                  <label class="checkbox-label" for="lnk11">
-                    Бассейн
-                  </label>
-                </li>
-                <li>
-                  <input class="checkbox" name="checkbox" type="checkbox" value="lnk12" id="lnk12">
-                  <label class="checkbox-label" for="lnk12">
-                    Парковка
-                  </label>
-                </li>
-                <li>
-                  <input class="checkbox" name="checkbox" type="checkbox" value="lnk13" id="lnk13" disabled>
-                  <label class="checkbox-label" for="lnk13">
-                    wi-fi
-                  </label>
-                </li>
-              </ul>
-            </li>
-            <li> <p class="filter-title">Тип жилья:</p>
-              <ul class="filter-title__list">
-                <li>
-                  <input class="checkbox" name="checkbox" type="checkbox" value="lnk21" id="lnk21" checked>
-                  <label class="checkbox-label" for="lnk21">
-                    Гостиница
-                  </label>
-                </li>
-                <li>
-                  <input class="checkbox" name="checkbox" type="checkbox" value="lnk22" id="lnk22" checked>
-                  <label class="checkbox-label" for="lnk22">
-                    Мотель
-                  </label>
-                </li>
-                <li>
-                  <input class="checkbox" name="checkbox" type="checkbox" value="lnk23" id="lnk23" checked disabled>
-                  <label class="checkbox-label" for="lnk23">
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <ul class="filter">
+          <li> <p class="filter-title">Инфраструктура:</p>
+            <ul class="filter-title__list">
+              <li>
+                <input class="checkbox" type="checkbox" value="lnk11" id="lnk11" checked>
+                <label class="checkbox-label" for="lnk11">
+                  Бассейн
+                </label>
+              </li>
+              <li>
+                <input class="checkbox" name="checkbox" type="checkbox" value="lnk12" id="lnk12">
+                <label class="checkbox-label" for="lnk12">
+                  Парковка
+                </label>
+              </li>
+              <li>
+                <input class="checkbox" name="checkbox" type="checkbox" value="lnk13" id="lnk13" disabled>
+                <label class="checkbox-label" for="lnk13">
+                  wi-fi
+                </label>
+              </li>
+            </ul>
+          </li>
+          <li> <p class="filter-title">Тип жилья:</p>
+            <ul class="filter-title__list">
+              <li>
+                <input class="checkbox" name="checkbox" type="checkbox" value="lnk21" id="lnk21" checked>
+                <label class="checkbox-label" for="lnk21">
+                  Гостиница
+                </label>
+              </li>
+              <li>
+                <input class="checkbox" name="checkbox" type="checkbox" value="lnk22" id="lnk22" checked>
+                <label class="checkbox-label" for="lnk22">
+                  Мотель
+                </label>
+              </li>
+              <li>
+                <input class="checkbox" name="checkbox" type="checkbox" value="lnk23" id="lnk23" checked disabled>
+                <label class="checkbox-label" for="lnk23">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="filter__cost">
+          <p class="filter-title">Стоимость в сутки (Р):</p>
+          <div class="cost__wrapper">
+            <div class="cost cost__wall">
+              <span>от 0</span>
+            </div>
+            <div class="cost">
+              <span>до 3000</span>
+            </div>
+          </div>
+          <div class="baseline">
+            <div class="baseline__grey"></div>
+          </div>
+          <div class="button">
+            <button class="button__search">
+              Показать
+            </button>
+          </div>
         </div>
       </section>
 
