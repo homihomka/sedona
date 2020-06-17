@@ -688,3 +688,74 @@ img {
   background-color: #ffffff;
   font-weight: 700;
 }
+
+.result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.result__subject {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
+}
+
+.result__sortinglist {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.result__sorting {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.result__choice {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.result__choice li {
+  margin-left: 34px;
+}
+
+.result__btn {
+  background-color: inherit;
+  border: none;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #b7b7b7;
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+}
+
+.result__btn:hover,
+.result__btn:focus{
+  color: #81b3d2;
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+}
+
+.result__btn:active {
+  color: #000;
+  text-decoration: none;
+}
